@@ -1,69 +1,34 @@
-# React + TypeScript + Vite
+#  StudySpace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Özellikler
 
-## Expanding the ESLint configuration
+- 📝 **Notlar Sayfası** – Ders notlarını oluştur, düzenle, sil
+- 📚 **Kitaplık Yönetimi** – Okuduğun kitapları ekle, durumunu takip et
+- 📅 **Takvim ve Etkinlik** – Günlere özel etkinlikler oluştur
+- 🎵 **Müzik Sayfası** – Odaklanmayı artıracak müzik arayüzü
+- 📱 **Responsive Tasarım** – Tüm cihazlara uyumlu
+- 🎨 **Modern UI** – Tailwind CSS ile tasarlandı
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Kullanılan Teknolojiler
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+| Teknoloji | Açıklama |
+|----------|----------|
+| React.js | Frontend yapı taşı |
+| Tailwind CSS | Modern stil framework'ü |
+| Lucide Icons | Şık ve hafif ikonlar |
+| localStorage | Verileri kalıcı tutmak için |
+| TypeScript (opsiyonel) | Daha sağlam yapı için desteklenebilir |
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📂 Proje Kurulumu
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+git clone https://github.com/elkingkral/studyspace.git
+cd studyspace
+npm install
+npm run dev
